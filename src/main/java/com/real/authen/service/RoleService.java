@@ -10,9 +10,9 @@ public interface RoleService {
 
 	public Role updateRole(Role role);
 
-	public Role findRole(Role role);
+	public List<Role> findRole(Role role);
 
-	public Role findRoleByUid(Role role);
+	public Role findRoleById(Role role);
 
 	public List<Role> getAllRole();
 
