@@ -11,5 +11,6 @@ import com.real.authen.model.Role;
 public interface RoleRepo extends CrudRepository<Role, Integer> {
 
 	public List<Role> findByRoleContaining(String role);
+	public Role findByRole(String role);
 
 }
