@@ -39,7 +39,7 @@ public class UserController {
 
 	@RequestMapping(value = "/api/auth/addUser",method=RequestMethod.POST,consumes=MediaType.APPLICATION_JSON_UTF8_VALUE,produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseModel> addUser(@RequestBody User user) {
-
+a
 		try {
 
 			userService.addUser(user, user.getRoles());
