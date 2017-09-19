@@ -38,11 +38,11 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/api/auth/addUser",method=RequestMethod.POST,consumes=MediaType.APPLICATION_JSON_UTF8_VALUE,produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public ResponseEntity<ResponseModel> addUser(@RequestBody User user, @RequestBody String role) {
+	public ResponseEntity<ResponseModel> addUser(@RequestBody User user) {
 
 		try {
 
-			userService.addUser(user, role);
+			userService.addUser(user, user.getRoles());
 			logger.info(user.toString() + " User added");
 
 			return new ResponseEntity<ResponseModel>(new ResponseModel("000", "User added", user), HttpStatus.OK);

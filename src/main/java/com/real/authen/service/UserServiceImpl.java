@@ -7,6 +7,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.real.authen.model.Role;
@@ -22,6 +23,9 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private RoleRepo roleRepo;
+	
+	@Autowired
+	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -32,6 +36,8 @@ public class UserServiceImpl implements UserService {
 		try {
 			User userModel = new User();
 			userModel = userRepo.findByEmail(user.getEmail());
+			user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+			user.setActive(1);
 
 			if (userModel == null) {
 				Role roleModel = new Role();
