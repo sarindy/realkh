@@ -39,10 +39,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers("/api/**").hasAnyAuthority("API").antMatchers("/admin/**")
-				.hasAnyAuthority("ADMIN").antMatchers("/user/**").hasAnyAuthority("USER").anyRequest().permitAll().and()
-				.httpBasic().and().csrf().disable();
+		//http.authorizeRequests().antMatchers("/api/**").hasAnyAuthority("API").antMatchers("/admin/**")
+				//.hasAnyAuthority("ADMIN").antMatchers("/user/**").hasAnyAuthority("USER").anyRequest().permitAll().and()
+				//.httpBasic().and().csrf().disable();
 		// .fullyAuthenticated().and().httpBasic().and().csrf().disable();
+		
+		http.authorizeRequests().antMatchers("/api/**").hasAnyAuthority("API").antMatchers("/admin/**")
+		.hasAnyAuthority("ADMIN").antMatchers("/user/**").hasAnyAuthority("USER").anyRequest().fullyAuthenticated().and().httpBasic().and().csrf().disable();
+		
+ 
 
 	}
 

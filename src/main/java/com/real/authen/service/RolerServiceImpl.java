@@ -30,6 +30,7 @@ public class RolerServiceImpl implements RoleService {
 					System.out.println(role.toString() + " Role Existed");
 					return null;
 				}
+				role.setRole(role.getRole().toUpperCase());
 				roleRepo.save(role);
 				logger.info(role.toString() + " Added");
 				System.out.println(role.toString() + " Added");
