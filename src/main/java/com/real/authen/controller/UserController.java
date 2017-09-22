@@ -39,31 +39,23 @@ public class UserController {
 
 	@RequestMapping(value = "/api/auth/addUser", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseModel> addUser(@RequestBody UserWrapObject userWrap) {
-		
+
 		/*
-		 * This is a postman script
-		 * {
-			"role":"API",
-			"user":{
-				"firstName":"sarindy",
-				"lastName":"Ouk",
-				"email":"developer@dnynn.com",
-				"password":"123456"
-			}
-		}*/
-		
+		 * This is a postman script { "role":"API", "user":{ "firstName":"sarindy",
+		 * "lastName":"Ouk", "email":"developer@dnynn.com", "password":"123456" } }
+		 */
 
 		try {
 
 			User user = new User();
-			
 
 			user = userWrap.getUser();
-
-			userService.addUser(user, userWrap.getRole());
-			logger.info(user.toString() + " User added");
-
-			return new ResponseEntity<ResponseModel>(new ResponseModel("000", "User added", user), HttpStatus.OK);
+			if (userService.addUser(user, userWrap.getRole()) != null) {
+				logger.info(user.toString() + " User added");
+				return new ResponseEntity<ResponseModel>(new ResponseModel("000", "User added", user), HttpStatus.OK);
+			}
+			return new ResponseEntity<ResponseModel>(
+					new ResponseModel("001", "User not create due to already exist or null", user), HttpStatus.OK);
 
 		} catch (Exception err) {
 			StackTraceElement[] elements = err.getStackTrace();

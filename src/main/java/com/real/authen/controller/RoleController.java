@@ -42,9 +42,12 @@ public class RoleController  {
 		
 		try {
 			
-			roleService.addRole(role);	
-			logger.info(role.toString() + " Added");
-			return new ResponseEntity<ResponseModel>(new ResponseModel("000","Role Created",role) ,HttpStatus.OK);
+			if (roleService.addRole(role) != null){
+				logger.info(role.toString() + " Added");
+				return new ResponseEntity<ResponseModel>(new ResponseModel("000","Role Created",role) ,HttpStatus.OK);	
+			}
+			return new ResponseEntity<ResponseModel>(new ResponseModel("001","Role not create. Maybe already existed or null",role) ,HttpStatus.OK);
+			
 			
 		}catch (Exception err) {
 			StackTraceElement[] elements = err.getStackTrace();
