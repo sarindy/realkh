@@ -22,14 +22,14 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-	
+
 	@RequestMapping("/initAdmin")
 	public String InitialAdmin() {
 		User user = new User("Sarindy", "Ouk", "admin@dnynn.com", "123456", 1);
 		userService.addUser(user, "ADMIN");
 		return "Admin Created";
 	}
-	
+
 	@RequestMapping("/initApi")
 	public String InitialApi() {
 		User user = new User("Sarindy", "Ouk", "api@dnynn.com", "123456", 1);
@@ -37,12 +37,30 @@ public class UserController {
 		return "Api Created";
 	}
 
-	@RequestMapping(value = "/api/auth/addUser",method=RequestMethod.POST,consumes=MediaType.APPLICATION_JSON_UTF8_VALUE,produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public ResponseEntity<ResponseModel> addUser(@RequestBody User user) {
-a
+	@RequestMapping(value = "/api/auth/addUser", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<ResponseModel> addUser(@RequestBody UserWrapObject userWrap) {
+		
+		/*
+		 * This is a postman script
+		 * {
+			"role":"API",
+			"user":{
+				"firstName":"sarindy",
+				"lastName":"Ouk",
+				"email":"developer@dnynn.com",
+				"password":"123456"
+			}
+		}*/
+		
+
 		try {
 
-			userService.addUser(user, user.getRoles());
+			User user = new User();
+			
+
+			user = userWrap.getUser();
+
+			userService.addUser(user, userWrap.getRole());
 			logger.info(user.toString() + " User added");
 
 			return new ResponseEntity<ResponseModel>(new ResponseModel("000", "User added", user), HttpStatus.OK);
@@ -53,7 +71,7 @@ a
 			error = "Class Name:" + elements[0].getClassName() + " Method Name:" + elements[0].getMethodName()
 					+ " Line Number:" + elements[0].getLineNumber() + "Error Message : " + err.getMessage();
 			logger.error(error);
-			return new ResponseEntity<ResponseModel>(new ResponseModel("999", "System Error", user),
+			return new ResponseEntity<ResponseModel>(new ResponseModel("999", "System Error", userWrap),
 					HttpStatus.BAD_REQUEST);
 		}
 
