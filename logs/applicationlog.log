@@ -7229,3 +7229,1019 @@ Using default security password: a3b5c738-7398-41ad-bc85-25c33f56226c
 2017-09-22 13:16:20 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@517ad743: startup date [Fri Sep 22 13:12:25 ICT 2017]; root of context hierarchy
 2017-09-22 13:16:20 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
 2017-09-22 13:16:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 14:54:16 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 9480 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 14:54:16 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 14:54:16 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@791093c4: startup date [Fri Sep 22 14:54:16 ICT 2017]; root of context hierarchy
+2017-09-22 14:54:18 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 14:54:18 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 14:54:18 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 14:54:18 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 14:54:18 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1916 ms
+2017-09-22 14:54:18 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 14:54:18 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 14:54:18 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 14:54:18 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 14:54:18 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 14:54:18 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 14:54:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 14:54:18 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 14:54:18 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-22 14:54:18 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-22 14:54:18 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-22 14:54:19 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-22 14:54:19 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 14:54:19 WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.real.contact.Contact
+2017-09-22 14:54:19 INFO  o.a.c.c.StandardService:179 - Stopping service [Tomcat]
+2017-09-22 14:54:19 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-22 14:54:19 ERROR o.s.b.SpringApplication:771 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.real.contact.Contact
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.real.RealkhApplication.main(RealkhApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.real.contact.Contact
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:265)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:717)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+2017-09-22 14:55:56 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 8808 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 14:55:56 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 14:55:57 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bb50cfe: startup date [Fri Sep 22 14:55:57 ICT 2017]; root of context hierarchy
+2017-09-22 14:55:58 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 14:55:58 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 14:55:58 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 14:55:58 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 14:55:58 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1827 ms
+2017-09-22 14:55:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 14:55:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 14:55:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 14:55:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 14:55:59 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 14:55:59 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 14:55:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 14:55:59 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 14:55:59 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-22 14:55:59 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-22 14:55:59 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-22 14:55:59 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-22 14:55:59 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 14:56:00 WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.real.contact.Contact
+2017-09-22 14:56:00 INFO  o.a.c.c.StandardService:179 - Stopping service [Tomcat]
+2017-09-22 14:56:00 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-22 14:56:00 ERROR o.s.b.SpringApplication:771 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.real.contact.Contact
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.real.RealkhApplication.main(RealkhApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.real.contact.Contact
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:265)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:717)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+2017-09-22 14:56:31 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 14:56:31 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 14:56:31 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@791093c4: startup date [Fri Sep 22 14:56:31 ICT 2017]; root of context hierarchy
+2017-09-22 14:56:33 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 14:56:33 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 14:56:33 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 14:56:33 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 14:56:33 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1944 ms
+2017-09-22 14:56:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 14:56:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 14:56:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 14:56:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 14:56:33 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 14:56:33 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 14:56:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 14:56:33 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 14:56:34 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-22 14:56:34 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-22 14:56:34 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-22 14:56:34 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-22 14:56:34 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 14:56:34 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 14:56:34 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: contact
+2017-09-22 14:56:34 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: contact
+2017-09-22 14:56:34 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: phone
+2017-09-22 14:56:34 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: phone
+2017-09-22 14:56:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 14:56:35 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 14:56:35 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 14:56:35 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 14:56:35 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 14:56:35 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 14:56:35 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bcd9395, org.springframework.security.web.context.SecurityContextPersistenceFilter@35735da1, org.springframework.security.web.header.HeaderWriterFilter@38839fe5, org.springframework.security.web.authentication.logout.LogoutFilter@65c007fd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2c1882ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c27132, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e82f77f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32869ab, org.springframework.security.web.session.SessionManagementFilter@c6210d6, org.springframework.security.web.access.ExceptionTranslationFilter@3efcc575, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2088a996]
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@791093c4: startup date [Fri Sep 22 14:56:31 ICT 2017]; root of context hierarchy
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 14:56:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 14:56:35 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 14:56:35 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 14:56:35 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 14:56:35 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 14:56:36 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: bc783412-b3c2-4b8b-a358-b29f8951ba45
+
+2017-09-22 14:56:36 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 14:56:36 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 14:56:36 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 14:56:36 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 5.722 seconds (JVM running for 6.333)
+2017-09-22 14:56:40 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 14:56:40 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 14:56:40 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-09-22 15:03:17 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@791093c4: startup date [Fri Sep 22 14:56:31 ICT 2017]; root of context hierarchy
+2017-09-22 15:03:17 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:03:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:03:18 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:03:18 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:03:18 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30edc1be: startup date [Fri Sep 22 15:03:18 ICT 2017]; root of context hierarchy
+2017-09-22 15:03:19 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:03:19 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:03:19 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:03:19 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:03:19 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 761 ms
+2017-09-22 15:03:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:03:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:03:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:03:19 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:03:19 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:03:19 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:03:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:03:19 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:03:19 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:03:19 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:03:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:03:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:03:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:03:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:03:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:03:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:03:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27ea5d03, org.springframework.security.web.context.SecurityContextPersistenceFilter@407fdf04, org.springframework.security.web.header.HeaderWriterFilter@7205cbd9, org.springframework.security.web.authentication.logout.LogoutFilter@57b27cef, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58e514ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5096b294, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c91e05c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66d082f5, org.springframework.security.web.session.SessionManagementFilter@6d56c5c4, org.springframework.security.web.access.ExceptionTranslationFilter@7cdd9493, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d212bd9]
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30edc1be: startup date [Fri Sep 22 15:03:18 ICT 2017]; root of context hierarchy
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:03:19 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:03:19 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:03:19 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:03:19 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:03:19 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:03:19 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 72149be9-c9d6-45f4-9a01-44d9481c8736
+
+2017-09-22 15:03:19 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:03:19 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:03:19 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:03:19 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.676 seconds (JVM running for 409.633)
+2017-09-22 15:03:23 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:03:23 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:03:23 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2017-09-22 15:04:14 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30edc1be: startup date [Fri Sep 22 15:03:18 ICT 2017]; root of context hierarchy
+2017-09-22 15:04:14 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:04:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:04:14 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:04:14 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:04:14 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1bd89d5: startup date [Fri Sep 22 15:04:14 ICT 2017]; root of context hierarchy
+2017-09-22 15:04:15 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:04:15 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:04:15 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:04:15 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:04:15 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 718 ms
+2017-09-22 15:04:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:04:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:04:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:04:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:04:15 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:04:15 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:04:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:04:15 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:04:15 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:04:15 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:04:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:04:16 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:04:16 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:04:16 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:04:16 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:04:16 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:04:16 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a4fff45, org.springframework.security.web.context.SecurityContextPersistenceFilter@689f30d7, org.springframework.security.web.header.HeaderWriterFilter@6f493d22, org.springframework.security.web.authentication.logout.LogoutFilter@68cc4468, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@55a3b9c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fd4c8c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49d2483d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43f5d964, org.springframework.security.web.session.SessionManagementFilter@6da982c5, org.springframework.security.web.access.ExceptionTranslationFilter@fc111b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@241697f2]
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1bd89d5: startup date [Fri Sep 22 15:04:14 ICT 2017]; root of context hierarchy
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:04:16 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:04:16 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:04:16 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:04:16 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:04:16 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:04:16 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: a37313a1-360d-4a9c-8c74-0d793439e972
+
+2017-09-22 15:04:16 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:04:16 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:04:16 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:04:16 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.552 seconds (JVM running for 466.118)
+2017-09-22 15:04:19 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:04:19 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:04:19 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2017-09-22 15:07:02 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1bd89d5: startup date [Fri Sep 22 15:04:14 ICT 2017]; root of context hierarchy
+2017-09-22 15:07:02 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:07:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:07:02 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:07:02 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:07:02 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24a1abf1: startup date [Fri Sep 22 15:07:02 ICT 2017]; root of context hierarchy
+2017-09-22 15:07:03 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:07:03 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:07:03 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:07:03 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:07:03 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 848 ms
+2017-09-22 15:07:03 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:07:03 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:07:03 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:07:03 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:07:03 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:07:03 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:07:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:07:04 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:07:04 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:07:04 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:07:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:07:04 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:07:04 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:07:04 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:07:04 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:07:04 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:07:04 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cc28acb, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bf1e595, org.springframework.security.web.header.HeaderWriterFilter@5c5be214, org.springframework.security.web.authentication.logout.LogoutFilter@45e3cd51, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3f0116a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26aa3755, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25622ad6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ab494b2, org.springframework.security.web.session.SessionManagementFilter@62b04a29, org.springframework.security.web.access.ExceptionTranslationFilter@219f1f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bfaec80]
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24a1abf1: startup date [Fri Sep 22 15:07:02 ICT 2017]; root of context hierarchy
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:07:04 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:07:04 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:07:04 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:07:04 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:07:04 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:07:04 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 8554ef58-c0d3-4c2d-8112-bb912b05e3dd
+
+2017-09-22 15:07:04 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:07:04 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:07:04 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:07:04 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.689 seconds (JVM running for 634.319)
+2017-09-22 15:07:13 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24a1abf1: startup date [Fri Sep 22 15:07:02 ICT 2017]; root of context hierarchy
+2017-09-22 15:07:13 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:07:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:07:13 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:07:13 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:07:13 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e4a7a5e: startup date [Fri Sep 22 15:07:13 ICT 2017]; root of context hierarchy
+2017-09-22 15:07:14 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:07:14 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:07:14 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:07:14 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:07:14 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 856 ms
+2017-09-22 15:07:14 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:07:14 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:07:14 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:07:14 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:07:14 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:07:14 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:07:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:07:14 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:07:14 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:07:14 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:07:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:07:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:07:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:07:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:07:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:07:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:07:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cedbd56, org.springframework.security.web.context.SecurityContextPersistenceFilter@72a1d748, org.springframework.security.web.header.HeaderWriterFilter@2778c0d0, org.springframework.security.web.authentication.logout.LogoutFilter@2c7e6f39, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@297ce46b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6044dbc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dbe95a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e28fb49, org.springframework.security.web.session.SessionManagementFilter@7cfa2e46, org.springframework.security.web.access.ExceptionTranslationFilter@679ead2b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2bded7d1]
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e4a7a5e: startup date [Fri Sep 22 15:07:13 ICT 2017]; root of context hierarchy
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:07:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:07:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:07:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:07:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:07:15 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:07:15 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 97687a13-9b70-4d48-bd15-84d890703752
+
+2017-09-22 15:07:15 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:07:15 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:07:15 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:07:15 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.7 seconds (JVM running for 645.202)
+2017-09-22 15:07:17 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:07:17 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:07:17 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2017-09-22 15:10:13 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e4a7a5e: startup date [Fri Sep 22 15:07:13 ICT 2017]; root of context hierarchy
+2017-09-22 15:10:13 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:10:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:10:14 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:10:14 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:10:14 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4531681: startup date [Fri Sep 22 15:10:14 ICT 2017]; root of context hierarchy
+2017-09-22 15:10:14 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:10:14 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:10:14 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:10:15 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:10:15 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 789 ms
+2017-09-22 15:10:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:10:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:10:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:10:15 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:10:15 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:10:15 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:10:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:10:15 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:10:15 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:10:15 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:10:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:10:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:10:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:10:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:10:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:10:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:10:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33dab1b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fc2bc86, org.springframework.security.web.header.HeaderWriterFilter@6026304e, org.springframework.security.web.authentication.logout.LogoutFilter@53b68658, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@716fe6fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ea51ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@519fa5bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e3fce1c, org.springframework.security.web.session.SessionManagementFilter@4b393256, org.springframework.security.web.access.ExceptionTranslationFilter@7bba87bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1340f4ba]
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4531681: startup date [Fri Sep 22 15:10:14 ICT 2017]; root of context hierarchy
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:10:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:10:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:10:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:10:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:10:15 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:10:15 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 9f27e0e5-7753-4703-80b3-feba8b64382b
+
+2017-09-22 15:10:15 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:10:15 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:10:15 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:10:15 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.651 seconds (JVM running for 825.527)
+2017-09-22 15:10:21 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:10:21 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:10:21 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2017-09-22 15:10:49 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4531681: startup date [Fri Sep 22 15:10:14 ICT 2017]; root of context hierarchy
+2017-09-22 15:10:49 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:10:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:10:49 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:10:49 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:10:49 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2899182d: startup date [Fri Sep 22 15:10:49 ICT 2017]; root of context hierarchy
+2017-09-22 15:10:50 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:10:50 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:10:50 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:10:50 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:10:50 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 822 ms
+2017-09-22 15:10:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:10:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:10:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:10:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:10:50 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:10:50 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:10:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:10:50 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:10:50 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:10:50 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:10:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:10:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:10:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:10:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:10:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:10:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:10:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d7b84b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@481da1d1, org.springframework.security.web.header.HeaderWriterFilter@344937a8, org.springframework.security.web.authentication.logout.LogoutFilter@6dddd0e4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ef00c7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@760d66d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b84fbca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f3eeb25, org.springframework.security.web.session.SessionManagementFilter@48d5dd5b, org.springframework.security.web.access.ExceptionTranslationFilter@742940f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76104fb9]
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2899182d: startup date [Fri Sep 22 15:10:49 ICT 2017]; root of context hierarchy
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:10:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:10:50 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:10:50 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:10:50 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:10:50 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:10:50 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: f5d3a713-4239-4359-b84f-7f7a551b95a0
+
+2017-09-22 15:10:50 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:10:50 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:10:50 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:10:50 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.631 seconds (JVM running for 860.695)
+2017-09-22 15:10:54 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:10:54 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:10:54 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2017-09-22 15:12:08 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2899182d: startup date [Fri Sep 22 15:10:49 ICT 2017]; root of context hierarchy
+2017-09-22 15:12:08 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:12:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:12:09 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:12:09 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:12:09 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dd2c375: startup date [Fri Sep 22 15:12:09 ICT 2017]; root of context hierarchy
+2017-09-22 15:12:09 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:12:09 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:12:09 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:12:09 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:12:09 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 755 ms
+2017-09-22 15:12:09 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:12:09 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:12:09 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:12:09 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:12:09 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:12:09 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:12:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:12:10 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:12:10 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:12:10 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:12:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:12:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:12:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:12:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:12:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:12:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:12:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4910410, org.springframework.security.web.context.SecurityContextPersistenceFilter@73497138, org.springframework.security.web.header.HeaderWriterFilter@6b10fe0a, org.springframework.security.web.authentication.logout.LogoutFilter@5d44693c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@97acbb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ada3a73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d6738c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@462b5f80, org.springframework.security.web.session.SessionManagementFilter@1f128173, org.springframework.security.web.access.ExceptionTranslationFilter@726777bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fd1227e]
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dd2c375: startup date [Fri Sep 22 15:12:09 ICT 2017]; root of context hierarchy
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:12:10 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:12:10 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:12:10 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:12:10 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:12:10 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:12:10 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 685bde01-1ec7-4f62-b2ae-f43d309b93d5
+
+2017-09-22 15:12:10 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:12:10 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:12:10 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:12:10 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.562 seconds (JVM running for 940.353)
+2017-09-22 15:12:45 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dd2c375: startup date [Fri Sep 22 15:12:09 ICT 2017]; root of context hierarchy
+2017-09-22 15:12:45 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:12:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:12:45 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:12:45 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:12:45 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fe8c313: startup date [Fri Sep 22 15:12:45 ICT 2017]; root of context hierarchy
+2017-09-22 15:12:46 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:12:46 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:12:46 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:12:46 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:12:46 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 873 ms
+2017-09-22 15:12:46 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:12:46 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:12:46 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:12:46 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:12:46 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:12:46 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:12:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:12:46 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:12:46 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:12:46 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:12:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:12:46 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:12:46 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:12:46 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:12:46 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:12:46 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:12:46 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35328c40, org.springframework.security.web.context.SecurityContextPersistenceFilter@75019050, org.springframework.security.web.header.HeaderWriterFilter@6303a4d, org.springframework.security.web.authentication.logout.LogoutFilter@51629a30, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7664129a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36ddf6f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31b84036, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aeb138c, org.springframework.security.web.session.SessionManagementFilter@64ccec7, org.springframework.security.web.access.ExceptionTranslationFilter@41605ff5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e29b285]
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fe8c313: startup date [Fri Sep 22 15:12:45 ICT 2017]; root of context hierarchy
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:12:46 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:12:46 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:12:46 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:12:46 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:12:46 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:12:46 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 3aa51d05-9c79-4386-9c3d-010b97df3272
+
+2017-09-22 15:12:46 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:12:47 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:12:47 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:12:47 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.663 seconds (JVM running for 976.73)
+2017-09-22 15:12:50 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:12:50 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:12:50 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2017-09-22 15:13:32 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fe8c313: startup date [Fri Sep 22 15:12:45 ICT 2017]; root of context hierarchy
+2017-09-22 15:13:32 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:13:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:13:32 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:13:32 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:13:32 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dfceb8a: startup date [Fri Sep 22 15:13:32 ICT 2017]; root of context hierarchy
+2017-09-22 15:13:33 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:13:33 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:13:33 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:13:33 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:13:33 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 709 ms
+2017-09-22 15:13:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:13:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:13:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:13:33 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:13:33 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:13:33 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:13:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:13:33 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:13:33 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:13:33 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:13:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:13:33 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:13:33 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:13:33 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:13:33 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:13:33 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:13:33 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4eabd1a3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f21e03c, org.springframework.security.web.header.HeaderWriterFilter@41b15a5c, org.springframework.security.web.authentication.logout.LogoutFilter@23f24f3d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@b48974f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a571f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4da28e38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@602636c5, org.springframework.security.web.session.SessionManagementFilter@2848ded7, org.springframework.security.web.access.ExceptionTranslationFilter@3d449ed1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22a6deeb]
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dfceb8a: startup date [Fri Sep 22 15:13:32 ICT 2017]; root of context hierarchy
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:13:33 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:13:33 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:13:33 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:13:33 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:13:33 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:13:33 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 40420e35-aec5-4691-80c2-9fab04638394
+
+2017-09-22 15:13:33 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:13:33 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:13:33 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:13:33 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.57 seconds (JVM running for 1023.64)
+2017-09-22 15:13:40 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:13:40 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:13:40 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2017-09-22 15:14:24 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dfceb8a: startup date [Fri Sep 22 15:13:32 ICT 2017]; root of context hierarchy
+2017-09-22 15:14:24 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:14:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:14:24 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:14:24 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:14:24 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a09507e: startup date [Fri Sep 22 15:14:24 ICT 2017]; root of context hierarchy
+2017-09-22 15:14:25 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:14:25 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:14:25 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:14:25 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:14:25 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 760 ms
+2017-09-22 15:14:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:14:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:14:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:14:25 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:14:25 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:14:25 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:14:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:14:25 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:14:25 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:14:26 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:14:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:14:26 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:14:26 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:14:26 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:14:26 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:14:26 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:14:26 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ca32be7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eb0e933, org.springframework.security.web.header.HeaderWriterFilter@9e41d4d, org.springframework.security.web.authentication.logout.LogoutFilter@652c423c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@45becc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13dc1f91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3afb66d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b401069, org.springframework.security.web.session.SessionManagementFilter@78d4fb9a, org.springframework.security.web.access.ExceptionTranslationFilter@7dc41eba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@739399a3]
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a09507e: startup date [Fri Sep 22 15:14:24 ICT 2017]; root of context hierarchy
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:14:26 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:14:26 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:14:26 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:14:26 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:14:26 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:14:26 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 667c9905-6361-40b4-b56c-593aa9a6ccd9
+
+2017-09-22 15:14:26 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:14:26 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:14:26 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:14:26 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.741 seconds (JVM running for 1076.309)
+2017-09-22 15:14:29 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:14:29 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:14:29 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2017-09-22 15:18:19 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a09507e: startup date [Fri Sep 22 15:14:24 ICT 2017]; root of context hierarchy
+2017-09-22 15:18:19 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:18:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:18:20 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:18:20 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:18:20 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44742cf8: startup date [Fri Sep 22 15:18:20 ICT 2017]; root of context hierarchy
+2017-09-22 15:18:20 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:18:20 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:18:20 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:18:20 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:18:20 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 723 ms
+2017-09-22 15:18:20 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:18:20 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:18:20 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:18:20 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:18:20 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:18:20 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:18:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:18:21 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:18:21 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:18:21 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:18:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:18:21 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:18:21 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:18:21 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:18:21 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:18:21 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:18:21 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5133d3a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ec487f7, org.springframework.security.web.header.HeaderWriterFilter@27ebd42b, org.springframework.security.web.authentication.logout.LogoutFilter@4c93fc14, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7423b849, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ca93c4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@159af778, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2595b8ac, org.springframework.security.web.session.SessionManagementFilter@3a1c6986, org.springframework.security.web.access.ExceptionTranslationFilter@63a42164, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f184012]
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44742cf8: startup date [Fri Sep 22 15:18:20 ICT 2017]; root of context hierarchy
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:18:21 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:18:21 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:18:21 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:18:21 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:18:21 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:18:21 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: ff56386f-9822-45a7-8c04-e30c633c70d3
+
+2017-09-22 15:18:21 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:18:21 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:18:21 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:18:21 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.469 seconds (JVM running for 1311.36)
+2017-09-22 15:18:25 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:18:25 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:18:25 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2017-09-22 15:20:44 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44742cf8: startup date [Fri Sep 22 15:18:20 ICT 2017]; root of context hierarchy
+2017-09-22 15:20:44 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:20:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:20:44 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:20:44 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:20:44 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@225cf584: startup date [Fri Sep 22 15:20:44 ICT 2017]; root of context hierarchy
+2017-09-22 15:20:45 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:20:45 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:20:45 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:20:45 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:20:45 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 822 ms
+2017-09-22 15:20:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:20:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:20:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:20:45 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:20:45 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:20:45 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:20:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:20:45 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:20:45 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:20:45 WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-09-22 15:20:45 INFO  o.a.c.c.StandardService:179 - Stopping service [Tomcat]
+2017-09-22 15:20:45 INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-22 15:20:45 ERROR o.s.b.SpringApplication:771 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.real.RealkhApplication.main(RealkhApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.real.contact.Phone column: recid (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:830) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:848) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:870) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:605) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:329) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:443) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	... 27 common frames omitted
+2017-09-22 15:21:20 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 3864 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:21:20 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:21:20 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@721bd724: startup date [Fri Sep 22 15:21:20 ICT 2017]; root of context hierarchy
+2017-09-22 15:21:21 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:21:21 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:21:21 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:21:21 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:21:21 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 862 ms
+2017-09-22 15:21:21 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:21:21 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:21:21 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:21:21 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:21:21 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:21:21 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:21:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:21:22 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:21:22 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:21:22 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:21:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:21:22 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:21:22 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:21:22 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:21:22 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:21:22 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:21:22 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ee5d9e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@63ad981e, org.springframework.security.web.header.HeaderWriterFilter@2857baf8, org.springframework.security.web.authentication.logout.LogoutFilter@502ee3c2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@232d4924, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f5bfa0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ace1f67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69b6c9de, org.springframework.security.web.session.SessionManagementFilter@3e408347, org.springframework.security.web.access.ExceptionTranslationFilter@740d1cf1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18ee46a5]
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@721bd724: startup date [Fri Sep 22 15:21:20 ICT 2017]; root of context hierarchy
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:21:22 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:21:22 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:21:22 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:21:22 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:21:22 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:21:22 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: d74d1290-a450-4607-9062-0a023dfa8eaa
+
+2017-09-22 15:21:22 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:21:22 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:21:22 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:21:22 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 1.658 seconds (JVM running for 1492.267)
+2017-09-22 15:21:26 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:21:26 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:21:26 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2017-09-22 15:21:33 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2017-09-22 15:21:33 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@721bd724: startup date [Fri Sep 22 15:21:20 ICT 2017]; root of context hierarchy
+2017-09-22 15:21:33 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-22 15:21:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:21:47 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 7660 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:21:47 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:21:47 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@439a1b1a: startup date [Fri Sep 22 15:21:47 ICT 2017]; root of context hierarchy
+2017-09-22 15:21:50 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:21:50 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:21:50 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:21:50 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:21:50 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 2379 ms
+2017-09-22 15:21:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:21:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:21:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:21:50 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:21:50 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:21:50 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:21:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:21:51 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:21:51 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-22 15:21:51 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-22 15:21:51 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-22 15:21:51 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-22 15:21:51 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:21:51 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:21:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:22:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:22:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:22:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:22:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:22:10 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:22:14 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@779ac3fe, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a0369a6, org.springframework.security.web.header.HeaderWriterFilter@5a3cab99, org.springframework.security.web.authentication.logout.LogoutFilter@655745d7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7fed8f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@442c0ca4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66ad107a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a78051a, org.springframework.security.web.session.SessionManagementFilter@7a3614db, org.springframework.security.web.access.ExceptionTranslationFilter@79694dd7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@547f7b9]
+2017-09-22 15:22:32 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@439a1b1a: startup date [Fri Sep 22 15:21:47 ICT 2017]; root of context hierarchy
+2017-09-22 15:22:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:22:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:22:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:22:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:22:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:22:35 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:22:36 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:22:36 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:22:38 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:22:38 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:22:41 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:22:46 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:23:03 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: 00b6eb2a-f811-4f62-837b-168eb3336190
+
+2017-09-22 15:23:13 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:23:22 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:23:24 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:23:24 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 97.343 seconds (JVM running for 99.329)
+2017-09-22 15:23:33 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-22 15:23:33 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-22 15:23:34 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 905 ms
+2017-09-22 15:24:56 INFO  c.r.RealkhApplication:48 - Starting RealkhApplication on DESKTOP-RM8GPFI with PID 1848 (C:\Users\dy\eclipse-workspace\realkh\target\classes started by dy in C:\Users\dy\eclipse-workspace\realkh)
+2017-09-22 15:24:56 INFO  c.r.RealkhApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-22 15:24:56 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a2ca02b: startup date [Fri Sep 22 15:24:56 ICT 2017]; root of context hierarchy
+2017-09-22 15:24:59 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-22 15:24:59 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-22 15:24:59 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-22 15:24:59 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-22 15:24:59 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 2326 ms
+2017-09-22 15:24:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-22 15:24:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-22 15:24:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-22 15:24:59 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-22 15:24:59 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-09-22 15:24:59 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-22 15:25:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:25:00 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-22 15:25:00 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-22 15:25:00 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-22 15:25:00 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-22 15:25:00 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-22 15:25:00 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-22 15:25:00 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-22 15:25:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-22 15:25:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2017-09-22 15:25:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/static/**'], []
+2017-09-22 15:25:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-09-22 15:25:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-09-22 15:25:19 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-09-22 15:25:23 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@485cb7fe, org.springframework.security.web.context.SecurityContextPersistenceFilter@153dbc7d, org.springframework.security.web.header.HeaderWriterFilter@1d662219, org.springframework.security.web.authentication.logout.LogoutFilter@5c313d6c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@200cc270, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5860278d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fb9ee04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46b768f5, org.springframework.security.web.session.SessionManagementFilter@36788861, org.springframework.security.web.access.ExceptionTranslationFilter@749db1ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66833b65]
+2017-09-22 15:25:40 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a2ca02b: startup date [Fri Sep 22 15:24:56 ICT 2017]; root of context hierarchy
+2017-09-22 15:25:43 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initRole]}" onto public java.lang.String com.real.authen.controller.RoleController.InitialRole()
+2017-09-22 15:25:43 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addRole],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.RoleController.addRole(com.real.authen.model.Role)
+2017-09-22 15:25:43 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initAdmin]}" onto public java.lang.String com.real.authen.controller.UserController.InitialAdmin()
+2017-09-22 15:25:44 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/auth/addUser],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.authen.controller.UserController.addUser(com.real.authen.controller.UserWrapObject)
+2017-09-22 15:25:44 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/initApi]}" onto public java.lang.String com.real.authen.controller.UserController.InitialApi()
+2017-09-22 15:25:44 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/api/contact/addContact],methods=[POST],consumes=[application/json;charset=UTF-8],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.real.response.ResponseModel> com.real.contact.ContactController.addContact(com.real.contact.Contact)
+2017-09-22 15:25:44 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-22 15:25:44 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-22 15:25:46 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:25:46 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:25:49 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-22 15:25:54 WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration:60 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-09-22 15:26:11 INFO  o.s.b.a.s.AuthenticationManagerConfiguration:173 - 
+
+Using default security password: f27b19bd-fbc5-40e3-9dda-49b68ccaa1d5
+
+2017-09-22 15:26:19 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-22 15:26:28 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-22 15:26:31 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-22 15:26:31 INFO  c.r.RealkhApplication:57 - Started RealkhApplication in 95.256 seconds (JVM running for 96.03)
